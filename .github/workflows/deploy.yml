@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-name: Build and Deploy Back-end on AWS
+name: Build and Deploy Front-end on AWS
 jobs:
   build:
     runs-on: self-hosted  # aws instance
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create back-end env file
+      - name: Create an env file
         uses: SpicyPizza/create-envfile@v1.3.1
         with:
           envkey_REACT_APP_BACK_END_URL: ${{secrets.REACT_APP_BACK_END_URL}}
