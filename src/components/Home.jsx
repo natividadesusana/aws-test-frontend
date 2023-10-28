@@ -14,7 +14,7 @@ function App() {
   }
   
   return <>
-    <h1>Register Names - Updated Version 27.10 🌙</h1>
+    <h1>Register Names - Updated Version 28.10 🌙</h1>
     <div><Link to="/names">See all names</Link></div>
     <br />
     <button onClick={addNewName}>Add new name</button>
