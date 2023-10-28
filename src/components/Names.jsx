@@ -17,7 +17,7 @@ function App() {
       setNames(names);
     } catch (error) {
       console.log(error);
-      alert("Erro! Não foi possível buscar os nomes!");
+      alert("Error! The record has not been added!");
     }
   }
   
@@ -29,7 +29,7 @@ function App() {
       <ul>
         {names.map((name,i) => <li key={i}>{name}</li>)}
       </ul>
-    ): "Não há nomes registrados..." }
+    ): "There are no names registered..." }
   </>
 }
 
